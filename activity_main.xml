@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:gravity="center">
+
+    <!-- TextView for Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPA Calculator"
+        android:textSize="24sp"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/etModuleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Module Name"
+        android:layout_marginTop="48dp"
+        android:inputType="text" />
+
+    <!-- EditText for Grade -->
+    <EditText
+        android:id="@+id/etGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mark"
+        android:layout_marginTop="48dp"
+        android:inputType="numberDecimal" />
+
+    <!-- Button to Add Module -->
+    <Button
+        android:id="@+id/btnAddModule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Module"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp" />
+
+    <!-- Button to Calculate GPA -->
+    <Button
+        android:id="@+id/btnCalculateGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate GPA"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp" />
+
+    <!-- TextView for display grades -->
+    <TextView
+        android:id="@+id/tvGradesList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grades List:"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:textSize="18sp" />
+
+    <!-- TextView for GPA Result -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPA:"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:textSize="18sp" />
+</LinearLayout>
